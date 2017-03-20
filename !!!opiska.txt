@@ -1,0 +1,2 @@
+klasa robot
+klasa wykresow rysowanie

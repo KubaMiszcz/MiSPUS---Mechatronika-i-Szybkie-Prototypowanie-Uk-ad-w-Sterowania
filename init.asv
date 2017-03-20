@@ -1,0 +1,15 @@
+function [Motor0,Motor1, Motor2] = init()
+%UNTITLED2 Summary of this function goes here
+%   Detailed explanation goes here
+COM_CloseNXT all
+global hNXT;
+hNXT = COM_OpenNXT();       % look for USB devices
+COM_SetDefaultNXT(hNXT);    % sets global default handle
+speed=20;
+
+Motor0 = NXTMotor('A', 'Power', speed,'ActionAtTachoLimit', 'Brake'); %ustawic 'HoldBreak'
+Motor1 = NXTMotor('B', 'Power', speed,'ActionAtTachoLimit', 'Brake');
+Motor2 = NXTMotor('C', 'Power', speed,'ActionAtTachoLimit', 'Brake'); 
+
+end
+
