@@ -1,0 +1,5 @@
+scisk do mocowania
+czujnik odbiciowy
+miernik
+kombinerki
+klebek drutu
